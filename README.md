@@ -72,7 +72,7 @@ libc++abi.dylib: terminating with uncaught exception of type NSException
     frame #34: 0x00000001bebc76d0 libsystem_pthread.dylib`_pthread_wqthread + 280
 ```
 
-<video src="https://github.com/erduoniba/HDCameraCrashDemo/blob/master/HDCameraCrashDemo.mp4" controls="true" />
+<video src="./HDCameraCrashDemo.mp4" controls="true" />
 
 
 
