@@ -1,5 +1,5 @@
 //
-//  SceneDelegate.h
+//  HDVideoDemo.h
 //  HDCameraCrashDemo
 //
 //  Created by 邓立兵 on 2019/12/23.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow * window;
+@interface HDVideoDemo : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

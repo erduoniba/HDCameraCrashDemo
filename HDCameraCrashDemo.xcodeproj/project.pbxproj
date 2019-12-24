@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		ADE878D323B0BAF300A8AB4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE878D223B0BAF300A8AB4D /* AppDelegate.m */; };
-		ADE878D623B0BAF300A8AB4D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE878D523B0BAF300A8AB4D /* SceneDelegate.m */; };
 		ADE878D923B0BAF300A8AB4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE878D823B0BAF300A8AB4D /* ViewController.m */; };
 		ADE878DC23B0BAF300A8AB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE878DA23B0BAF300A8AB4D /* Main.storyboard */; };
 		ADE878DE23B0BAF400A8AB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE878DD23B0BAF400A8AB4D /* Assets.xcassets */; };
 		ADE878E123B0BAF400A8AB4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE878DF23B0BAF400A8AB4D /* LaunchScreen.storyboard */; };
 		ADE878E423B0BAF400A8AB4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE878E323B0BAF400A8AB4D /* main.m */; };
+		ADE878EB23B0BB9700A8AB4D /* openCamera.html in Resources */ = {isa = PBXBuildFile; fileRef = ADE878EA23B0BB9700A8AB4D /* openCamera.html */; };
+		ADE878EE23B0BBB100A8AB4D /* HDWebViewDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE878ED23B0BBB100A8AB4D /* HDWebViewDemo.m */; };
+		ADE878F123B0BBDC00A8AB4D /* HDVideoDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE878F023B0BBDC00A8AB4D /* HDVideoDemo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ADE878CE23B0BAF300A8AB4D /* HDCameraCrashDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HDCameraCrashDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE878D123B0BAF300A8AB4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADE878D223B0BAF300A8AB4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ADE878D423B0BAF300A8AB4D /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		ADE878D523B0BAF300A8AB4D /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		ADE878D723B0BAF300A8AB4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		ADE878D823B0BAF300A8AB4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ADE878DB23B0BAF300A8AB4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +29,11 @@
 		ADE878E023B0BAF400A8AB4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADE878E223B0BAF400A8AB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE878E323B0BAF400A8AB4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADE878EA23B0BB9700A8AB4D /* openCamera.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = openCamera.html; sourceTree = "<group>"; };
+		ADE878EC23B0BBB100A8AB4D /* HDWebViewDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDWebViewDemo.h; sourceTree = "<group>"; };
+		ADE878ED23B0BBB100A8AB4D /* HDWebViewDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDWebViewDemo.m; sourceTree = "<group>"; };
+		ADE878EF23B0BBDC00A8AB4D /* HDVideoDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDVideoDemo.h; sourceTree = "<group>"; };
+		ADE878F023B0BBDC00A8AB4D /* HDVideoDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDVideoDemo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +68,13 @@
 			children = (
 				ADE878D123B0BAF300A8AB4D /* AppDelegate.h */,
 				ADE878D223B0BAF300A8AB4D /* AppDelegate.m */,
-				ADE878D423B0BAF300A8AB4D /* SceneDelegate.h */,
-				ADE878D523B0BAF300A8AB4D /* SceneDelegate.m */,
 				ADE878D723B0BAF300A8AB4D /* ViewController.h */,
 				ADE878D823B0BAF300A8AB4D /* ViewController.m */,
+				ADE878EF23B0BBDC00A8AB4D /* HDVideoDemo.h */,
+				ADE878F023B0BBDC00A8AB4D /* HDVideoDemo.m */,
+				ADE878EC23B0BBB100A8AB4D /* HDWebViewDemo.h */,
+				ADE878ED23B0BBB100A8AB4D /* HDWebViewDemo.m */,
+				ADE878EA23B0BB9700A8AB4D /* openCamera.html */,
 				ADE878DA23B0BAF300A8AB4D /* Main.storyboard */,
 				ADE878DD23B0BAF400A8AB4D /* Assets.xcassets */,
 				ADE878DF23B0BAF400A8AB4D /* LaunchScreen.storyboard */,
@@ -134,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE878E123B0BAF400A8AB4D /* LaunchScreen.storyboard in Resources */,
+				ADE878EB23B0BB9700A8AB4D /* openCamera.html in Resources */,
 				ADE878DE23B0BAF400A8AB4D /* Assets.xcassets in Resources */,
 				ADE878DC23B0BAF300A8AB4D /* Main.storyboard in Resources */,
 			);
@@ -149,7 +158,8 @@
 				ADE878D923B0BAF300A8AB4D /* ViewController.m in Sources */,
 				ADE878D323B0BAF300A8AB4D /* AppDelegate.m in Sources */,
 				ADE878E423B0BAF400A8AB4D /* main.m in Sources */,
-				ADE878D623B0BAF300A8AB4D /* SceneDelegate.m in Sources */,
+				ADE878F123B0BBDC00A8AB4D /* HDVideoDemo.m in Sources */,
+				ADE878EE23B0BBB100A8AB4D /* HDWebViewDemo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQ353LFGTA;
 				INFOPLIST_FILE = HDCameraCrashDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQ353LFGTA;
 				INFOPLIST_FILE = HDCameraCrashDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
