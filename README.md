@@ -1,6 +1,7 @@
 # HDCameraCrashDemo
 
 
+
 ### 问题描述
 
 iOS13及以上的系统，使用Xcode11.2编译器运行，在特定的路径下唤起系统拍照/录像会直接Crash，使用该Demo的Crash的日志如下：
@@ -71,7 +72,9 @@ libc++abi.dylib: terminating with uncaught exception of type NSException
     frame #34: 0x00000001bebc76d0 libsystem_pthread.dylib`_pthread_wqthread + 280
 ```
 
-![](./HDCameraCrashDemo.mp4)
+<video src="https://github.com/erduoniba/HDCameraCrashDemo/blob/master/HDCameraCrashDemo.mp4" controls="true" />
+
+
 
 
 
@@ -143,7 +146,9 @@ static inline void pg_swizzleSelector(Class theClass, SEL originalSelector, SEL 
 
 上面的问题解决，其实的确是能解决问题，但是并没有从根源上发现到底是什么地方导致，通过查看代码发现，我们的项目中对 `[[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications]` 、`[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications]` 没有成对实现，测试发现，如果 多调用了两次  `[[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications]`  ,  然后再唤起H5的拍照/录视频，在iOS13系统上必然Crash，可以在下载 [HDCameraCrashDemo](https://github.com/erduoniba/HDCameraCrashDemo/tree/master) 进行验证
 
-所以这个并不一定是iOS13系统的问题，只要在调用系统方法合理，并不会有该类型的Crash发生。
-
 **可以在  `[[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications]` 、`[[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications]`  添加一个 `BOOL` 类型的变量来控制他们的成对出现，从根本上解决这类问题。**
+
+**所以这个并不一定是iOS13系统的问题，只要在调用系统方法合理，并不会有该类型的Crash发生。**
+
+
 
