@@ -132,6 +132,12 @@ static inline void pg_swizzleSelector(Class theClass, SEL originalSelector, SEL 
 
 - (void)pgEndGeneratingDeviceOrientationNotifications {
     NSLog(@"pgEndGeneratingDeviceOrientationNotifications isMainThread:%d", [NSThread isMainThread]);
+    if (![NSThread isMainThread]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self pgEndGeneratingDeviceOrientationNotifications];
+        });
+        return;
+    }
     [self pgEndGeneratingDeviceOrientationNotifications];
 }
 
